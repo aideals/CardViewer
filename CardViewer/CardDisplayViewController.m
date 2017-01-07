@@ -7,31 +7,27 @@
 //
 
 #import "CardDisplayViewController.h"
+#import "PlayingCardView.h"
 
 @interface CardDisplayViewController ()
-
+@property (nonatomic, strong) PlayingCardView *playingCardView;
 @end
 
 @implementation CardDisplayViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void)setPlayingCardView:(PlayingCardView *)playingCardView
+{
+    if (!_playingCardView) _playingCardView = [[PlayingCardView alloc] init];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.playingCardView.rank = self.rank;
+    self.playingCardView.suit = self.suit;
+    self.playingCardView.faceUp = YES;
+    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
