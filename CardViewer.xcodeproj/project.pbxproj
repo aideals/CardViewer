@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		1D58BC3A1E1E3A77006586FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC391E1E3A77006586FF /* main.m */; };
 		1D58BC3D1E1E3A77006586FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC3C1E1E3A77006586FF /* AppDelegate.m */; };
-		1D58BC401E1E3A77006586FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC3F1E1E3A77006586FF /* ViewController.m */; };
-		1D58BC431E1E3A77006586FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D58BC411E1E3A77006586FF /* Main.storyboard */; };
+		1D58BC401E1E3A77006586FF /* CardChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC3F1E1E3A77006586FF /* CardChooserViewController.m */; };
 		1D58BC451E1E3A77006586FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D58BC441E1E3A77006586FF /* Assets.xcassets */; };
 		1D58BC481E1E3A77006586FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D58BC461E1E3A77006586FF /* LaunchScreen.storyboard */; };
 		1D58BC531E1E3A77006586FF /* CardViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC521E1E3A77006586FF /* CardViewerTests.m */; };
 		1D58BC5E1E1E3A77006586FF /* CardViewerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC5D1E1E3A77006586FF /* CardViewerUITests.m */; };
+		1D58BC6D1E1E3B3E006586FF /* CardDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC6C1E1E3B3E006586FF /* CardDisplayViewController.m */; };
+		1D58BC711E1E3B92006586FF /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC701E1E3B92006586FF /* PlayingCardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +40,8 @@
 		1D58BC391E1E3A77006586FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D58BC3B1E1E3A77006586FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D58BC3C1E1E3A77006586FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D58BC3E1E1E3A77006586FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1D58BC3F1E1E3A77006586FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1D58BC421E1E3A77006586FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D58BC3E1E1E3A77006586FF /* CardChooserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardChooserViewController.h; sourceTree = "<group>"; };
+		1D58BC3F1E1E3A77006586FF /* CardChooserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardChooserViewController.m; sourceTree = "<group>"; };
 		1D58BC441E1E3A77006586FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D58BC471E1E3A77006586FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D58BC491E1E3A77006586FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +51,10 @@
 		1D58BC591E1E3A77006586FF /* CardViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D58BC5D1E1E3A77006586FF /* CardViewerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewerUITests.m; sourceTree = "<group>"; };
 		1D58BC5F1E1E3A77006586FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D58BC6B1E1E3B3E006586FF /* CardDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardDisplayViewController.h; sourceTree = "<group>"; };
+		1D58BC6C1E1E3B3E006586FF /* CardDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardDisplayViewController.m; sourceTree = "<group>"; };
+		1D58BC6F1E1E3B92006586FF /* PlayingCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardView.h; sourceTree = "<group>"; };
+		1D58BC701E1E3B92006586FF /* PlayingCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +107,11 @@
 			children = (
 				1D58BC3B1E1E3A77006586FF /* AppDelegate.h */,
 				1D58BC3C1E1E3A77006586FF /* AppDelegate.m */,
-				1D58BC3E1E1E3A77006586FF /* ViewController.h */,
-				1D58BC3F1E1E3A77006586FF /* ViewController.m */,
-				1D58BC411E1E3A77006586FF /* Main.storyboard */,
+				1D58BC3E1E1E3A77006586FF /* CardChooserViewController.h */,
+				1D58BC3F1E1E3A77006586FF /* CardChooserViewController.m */,
+				1D58BC6B1E1E3B3E006586FF /* CardDisplayViewController.h */,
+				1D58BC6C1E1E3B3E006586FF /* CardDisplayViewController.m */,
+				1D58BC6E1E1E3B58006586FF /* PlayCardView */,
 				1D58BC441E1E3A77006586FF /* Assets.xcassets */,
 				1D58BC461E1E3A77006586FF /* LaunchScreen.storyboard */,
 				1D58BC491E1E3A77006586FF /* Info.plist */,
@@ -138,6 +144,15 @@
 				1D58BC5F1E1E3A77006586FF /* Info.plist */,
 			);
 			path = CardViewerUITests;
+			sourceTree = "<group>";
+		};
+		1D58BC6E1E1E3B58006586FF /* PlayCardView */ = {
+			isa = PBXGroup;
+			children = (
+				1D58BC6F1E1E3B92006586FF /* PlayingCardView.h */,
+				1D58BC701E1E3B92006586FF /* PlayingCardView.m */,
+			);
+			name = PlayCardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +263,6 @@
 			files = (
 				1D58BC481E1E3A77006586FF /* LaunchScreen.storyboard in Resources */,
 				1D58BC451E1E3A77006586FF /* Assets.xcassets in Resources */,
-				1D58BC431E1E3A77006586FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D58BC401E1E3A77006586FF /* ViewController.m in Sources */,
+				1D58BC401E1E3A77006586FF /* CardChooserViewController.m in Sources */,
+				1D58BC6D1E1E3B3E006586FF /* CardDisplayViewController.m in Sources */,
 				1D58BC3D1E1E3A77006586FF /* AppDelegate.m in Sources */,
 				1D58BC3A1E1E3A77006586FF /* main.m in Sources */,
+				1D58BC711E1E3B92006586FF /* PlayingCardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +327,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1D58BC411E1E3A77006586FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D58BC421E1E3A77006586FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D58BC461E1E3A77006586FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

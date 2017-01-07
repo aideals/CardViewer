@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "CardChooserViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -15,8 +17,17 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    CardChooserViewController *cvc = [[CardChooserViewController alloc] initWithNibName:nil bundle:nil];
+    self.nc = [[UINavigationController alloc] initWithRootViewController:cvc];
+    cvc.title = @"Card Chooser";
+    
+    self.window.rootViewController = self.nc;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

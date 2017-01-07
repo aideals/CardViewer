@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PlayingCardView.h
 //  CardViewer
 //
 //  Created by 鹏 刘 on 2017/1/5.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PlayingCardView : UIView
 
 @end
-
