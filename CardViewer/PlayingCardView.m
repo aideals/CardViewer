@@ -120,9 +120,28 @@
     {
         [self drawPipsWithHorizontalOffset:0 verticalOffset:0 mirroredVertically:NO];
     }
+    if ((self.rank == 6) || (self.rank == 7) || (self.rank == 8)) {
+        [self drawPipsWithHorizontalOffset:PIP_HOFFSET_PERCENTAGE
+                            verticalOffset:0
+                        mirroredVertically:NO];
+    }
+    if ((self.rank == 2) || (self.rank == 3) || (self.rank == 7) || (self.rank == 8) || (self.rank == 10)) {
+        [self drawPipsWithHorizontalOffset:0
+                            verticalOffset:PIP_VOFFSET2_PERCENTAGE
+                        mirroredVertically:(self.rank != 7)];
+    }
+    if ((self.rank == 4) || (self.rank == 5) || (self.rank == 6) || (self.rank == 7) || (self.rank == 8) || (self.rank == 9) || (self.rank == 10)) {
+        [self drawPipsWithHorizontalOffset:PIP_HOFFSET_PERCENTAGE
+                            verticalOffset:PIP_VOFFSET3_PERCENTAGE
+                        mirroredVertically:YES];
+    }
+    if ((self.rank == 9) || (self.rank == 10)) {
+        [self drawPipsWithHorizontalOffset:PIP_HOFFSET_PERCENTAGE
+                            verticalOffset:PIP_VOFFSET1_PERCENTAGE
+                        mirroredVertically:YES];
+    }
+
 }
-
-
 
 - (void)drawPipsWithHorizontalOffset:(CGFloat)hoffset verticalOffset:(CGFloat)voffset upsideDown:(BOOL)upsideDown
 {
