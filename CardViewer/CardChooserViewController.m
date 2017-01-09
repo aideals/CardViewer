@@ -71,6 +71,7 @@
 {
     self.suitSelectedSegmented = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"♠️" ,@"♣️",@"♥️",@"♦️",nil]];
     self.suitSelectedSegmented.frame = CGRectMake(90, 350, 170, 50);
+    self.suitSelectedSegmented.selectedSegmentIndex = 0;
     [self.view addSubview:self.suitSelectedSegmented];
 }
 
@@ -83,7 +84,7 @@
     [self.view addSubview:showCard];
 }
 
-- (IBAction)showCard:(id)sender
+- (IBAction)showCard:(UIButton *)sender
 {
     CardDisplayViewController *cdvs = [[CardDisplayViewController alloc] initWithNibName:nil bundle:nil];
     cdvs.rank = self.rank;

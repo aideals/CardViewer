@@ -87,7 +87,7 @@
     NSAttributedString *cornerText = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@\n%@",[self rankAsString],self.suit] attributes:@{NSParagraphStyleAttributeName : paragraphStyle,NSFontAttributeName : cornerFont}];
     
     CGRect cornerBounds;
-    cornerBounds.origin =CGPointMake(CORNER_offset,CORNER_offset);
+    cornerBounds.origin = CGPointMake(CORNER_offset,CORNER_offset);
     cornerBounds.size = [cornerText size];
     [cornerText drawInRect:cornerBounds];
     
@@ -118,7 +118,9 @@
 {
     if ((self.rank == 1) || (self.rank == 3) || (self.rank == 5) || (self.rank == 9))
     {
-        [self drawPipsWithHorizontalOffset:0 verticalOffset:0 mirroredVertically:NO];
+        [self drawPipsWithHorizontalOffset:0
+                            verticalOffset:0
+                        mirroredVertically:NO];
     }
     if ((self.rank == 6) || (self.rank == 7) || (self.rank == 8)) {
         [self drawPipsWithHorizontalOffset:PIP_HOFFSET_PERCENTAGE
@@ -143,7 +145,9 @@
 
 }
 
-- (void)drawPipsWithHorizontalOffset:(CGFloat)hoffset verticalOffset:(CGFloat)voffset upsideDown:(BOOL)upsideDown
+- (void)drawPipsWithHorizontalOffset:(CGFloat)hoffset
+                      verticalOffset:(CGFloat)voffset
+                          upsideDown:(BOOL)upsideDown
 {
     if (upsideDown)[self pushContextAndRotateUpsideDown];
     CGPoint middle = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);
@@ -159,15 +163,38 @@
         [attributeSuit drawAtPoint:pipOrigin];
     }
     if (upsideDown) [self popContext];
-
 }
 
-- (void)drawPipsWithHorizontalOffset:(CGFloat)hoffset verticalOffset:(CGFloat)voffset mirroredVertically:(BOOL)mirroredVertically
+- (void)drawPipsWithHorizontalOffset:(CGFloat)hoffset
+                      verticalOffset:(CGFloat)voffset
+                  mirroredVertically:(BOOL)mirroredVertically
 {
-    [self drawPipsWithHorizontalOffset:hoffset verticalOffset:voffset upsideDown:NO];
+    [self drawPipsWithHorizontalOffset:hoffset
+                        verticalOffset:voffset
+                            upsideDown:NO];
     if (mirroredVertically) {
-        [self drawPipsWithHorizontalOffset:hoffset verticalOffset:voffset upsideDown:YES];
+        [self drawPipsWithHorizontalOffset:hoffset
+                            verticalOffset:voffset
+                                upsideDown:YES];
     }
+}
+
+
+- (void)setUp
+{
+    
+}
+
+- (void)awakeFromNib
+{
+    [self setUp];
+}
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    [self setUp];
+    return self;
 }
 
 
