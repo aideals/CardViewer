@@ -15,20 +15,15 @@
 
 @implementation CardDisplayViewController
 
-- (void)setPlayingCardView:(PlayingCardView *)playingCardView
-{
-    if (!_playingCardView) _playingCardView = [[PlayingCardView alloc] init];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"card display";
-}
-
-
-- (void)viewWillAppear:(BOOL)animated
-{
+    
+    self.playingCardView = [[PlayingCardView alloc] initWithFrame:CGRectMake(42, 70, 300, 580)];
+    self.playingCardView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.playingCardView];
+    
     self.playingCardView.rank = self.rank;
     self.playingCardView.suit = self.suit;
     self.playingCardView.faceUp = YES;
