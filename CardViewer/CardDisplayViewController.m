@@ -20,6 +20,13 @@
     if (!_playingCardView) _playingCardView = [[PlayingCardView alloc] init];
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.title = @"card display";
+}
+
+
 - (void)viewWillAppear:(BOOL)animated
 {
     self.playingCardView.rank = self.rank;
