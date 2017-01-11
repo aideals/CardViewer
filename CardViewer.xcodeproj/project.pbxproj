@@ -161,7 +161,6 @@
 				1D58BC6C1E1E3B3E006586FF /* CardDisplayViewController.m */,
 				1D58BC6E1E1E3B58006586FF /* PlayCardView */,
 				1D58BC441E1E3A77006586FF /* Assets.xcassets */,
-				1D664F711E221E6800F9879B /* Face Card Images */,
 				1D58BC461E1E3A77006586FF /* LaunchScreen.storyboard */,
 				1D58BC491E1E3A77006586FF /* Info.plist */,
 				1D58BC381E1E3A77006586FF /* Supporting Files */,
@@ -200,6 +199,7 @@
 			children = (
 				1D58BC6F1E1E3B92006586FF /* PlayingCardView.h */,
 				1D58BC701E1E3B92006586FF /* PlayingCardView.m */,
+				1D664F711E221E6800F9879B /* Face Card Images */,
 			);
 			name = PlayCardView;
 			sourceTree = "<group>";

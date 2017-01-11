@@ -60,9 +60,11 @@
     UIRectFill(self.bounds);
     
     if (self.faceUp) {
-        UIImage *faceImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@.jpg",[self rankAsString],self.suit]];
+       UIImage *faceImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@.jpg",[self rankAsString],self.suit]];
+        
         if (faceImage) {
-            CGRect imageRect = CGRectInset(self.bounds, self.bounds.size.width * (1 - self.faceCardScaleFactor),
+            CGRect imageRect = CGRectInset(self.bounds,
+                                           self.bounds.size.width * (1 - self.faceCardScaleFactor),
                                            self.bounds.size.height * (1 - self.faceCardScaleFactor));
             [faceImage drawInRect:imageRect];
         } else {
@@ -75,7 +77,7 @@
 }
 
 #define PIP_FONT_SCALE_FACTOR 0.20
-#define CORNER_offset 2.0
+#define CORNER_OFFSET 2.0
 
 - (void)drawCorners
 {
@@ -87,7 +89,7 @@
     NSAttributedString *cornerText = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@\n%@",[self rankAsString],self.suit] attributes:@{NSParagraphStyleAttributeName : paragraphStyle,NSFontAttributeName : cornerFont}];
     
     CGRect cornerBounds;
-    cornerBounds.origin = CGPointMake(CORNER_offset,CORNER_offset);
+    cornerBounds.origin = CGPointMake(CORNER_OFFSET,CORNER_OFFSET);
     cornerBounds.size = [cornerText size];
     [cornerText drawInRect:cornerBounds];
     
@@ -178,10 +180,5 @@
                                 upsideDown:YES];
     }
 }
-
-
-
-
-
 
 @end

@@ -26,6 +26,7 @@
     
     self.playingCardView.rank = self.rank;
     self.playingCardView.suit = self.suit;
+    
     self.playingCardView.faceUp = YES;
     
 }

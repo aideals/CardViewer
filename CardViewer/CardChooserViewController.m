@@ -69,7 +69,7 @@
 
 - (void)initSuitSelectedSegmented
 {
-    self.suitSelectedSegmented = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"♠️" ,@"♣️",@"♥️",@"♦️",nil]];
+    self.suitSelectedSegmented = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"♠" ,@"♣",@"♦",@"♥",nil]];
     self.suitSelectedSegmented.frame = CGRectMake(90, 350, 170, 50);
     self.suitSelectedSegmented.selectedSegmentIndex = 0;
     [self.view addSubview:self.suitSelectedSegmented];
