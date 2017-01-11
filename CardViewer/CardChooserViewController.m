@@ -52,7 +52,7 @@
 {
     self.rankSlider = [[UISlider alloc] initWithFrame:CGRectMake(25, 265, 300, 20)];
     self.rankSlider.minimumValue = 0;
-    self.rankSlider.maximumValue = 12;
+    self.rankSlider.maximumValue = 13;
     [self.rankSlider addTarget:self action:@selector(changeCount:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:self.rankSlider];
 }

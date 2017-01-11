@@ -180,22 +180,7 @@
 }
 
 
-- (void)setUp
-{
-    
-}
 
-- (void)awakeFromNib
-{
-    [self setUp];
-}
-
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    [self setUp];
-    return self;
-}
 
 
 
