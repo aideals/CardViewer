@@ -29,6 +29,14 @@
     
     self.playingCardView.faceUp = YES;
     
+    /*PlayingCardView *pcv = [[PlayingCardView alloc] initWithFrame:CGRectMake(42, 70, 300, 580)];
+    pcv.backgroundColor = [UIColor redColor];
+    [self.view addSubview:pcv];
+    
+    pcv.rank = self.rank;
+    pcv.suit = self.suit;
+    
+    pcv.faceUp = YES;*/
 }
 
 

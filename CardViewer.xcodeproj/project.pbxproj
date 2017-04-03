@@ -11,7 +11,6 @@
 		1D58BC3D1E1E3A77006586FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC3C1E1E3A77006586FF /* AppDelegate.m */; };
 		1D58BC401E1E3A77006586FF /* CardChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC3F1E1E3A77006586FF /* CardChooserViewController.m */; };
 		1D58BC451E1E3A77006586FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D58BC441E1E3A77006586FF /* Assets.xcassets */; };
-		1D58BC481E1E3A77006586FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D58BC461E1E3A77006586FF /* LaunchScreen.storyboard */; };
 		1D58BC531E1E3A77006586FF /* CardViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC521E1E3A77006586FF /* CardViewerTests.m */; };
 		1D58BC5E1E1E3A77006586FF /* CardViewerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC5D1E1E3A77006586FF /* CardViewerUITests.m */; };
 		1D58BC6D1E1E3B3E006586FF /* CardDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58BC6C1E1E3B3E006586FF /* CardDisplayViewController.m */; };
@@ -67,7 +66,6 @@
 		1D58BC3E1E1E3A77006586FF /* CardChooserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardChooserViewController.h; sourceTree = "<group>"; };
 		1D58BC3F1E1E3A77006586FF /* CardChooserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardChooserViewController.m; sourceTree = "<group>"; };
 		1D58BC441E1E3A77006586FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1D58BC471E1E3A77006586FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D58BC491E1E3A77006586FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D58BC4E1E1E3A77006586FF /* CardViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D58BC521E1E3A77006586FF /* CardViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewerTests.m; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 				1D58BC6C1E1E3B3E006586FF /* CardDisplayViewController.m */,
 				1D58BC6E1E1E3B58006586FF /* PlayCardView */,
 				1D58BC441E1E3A77006586FF /* Assets.xcassets */,
-				1D58BC461E1E3A77006586FF /* LaunchScreen.storyboard */,
 				1D58BC491E1E3A77006586FF /* Info.plist */,
 				1D58BC381E1E3A77006586FF /* Supporting Files */,
 			);
@@ -361,7 +358,6 @@
 				1D664F8B1E221E6800F9879B /* J♠@2x.jpg in Resources */,
 				1D664F8A1E221E6800F9879B /* J♠.jpg in Resources */,
 				1D664F8D1E221E6800F9879B /* J♣@2x.jpg in Resources */,
-				1D58BC481E1E3A77006586FF /* LaunchScreen.storyboard in Resources */,
 				1D664F901E221E6800F9879B /* J♦.jpg in Resources */,
 				1D664F951E221E6800F9879B /* K♣@2x.jpg in Resources */,
 				1D664F921E221E6800F9879B /* K♠.jpg in Resources */,
@@ -429,17 +425,6 @@
 			targetProxy = 1D58BC5A1E1E3A77006586FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1D58BC461E1E3A77006586FF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D58BC471E1E3A77006586FF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D58BC601E1E3A77006586FF /* Debug */ = {
